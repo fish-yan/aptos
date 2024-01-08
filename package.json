@@ -1,0 +1,23 @@
+{
+  "name": "aptos-provider",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs > dist/aptos-min.js",
+    "test": "npx browserify web3.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs > dist/web3.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "eslint": "^8.7.0",
+    "uglify-js": "^3.15.0",
+    "web3": "^0.20.7"
+  }
+}

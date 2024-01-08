@@ -1,0 +1,5 @@
+{
+  "mangle": {
+    "reserved": ["AptosWeb3Provider"]
+  }
+}
